@@ -1,3 +1,62 @@
-The input shows only `.gitignore` was added, with no other file changes. Since there are no build artifacts, dependencies, or temporary files in the change list, and only a source/config file type (`.gitignore`) was added, no additional ignore rules are needed.
+```
+# Dependencies
+node_modules/
 
-Output: (empty - output nothing)
+# Build artifacts
+dist/
+build/
+.next/
+.nuxt/
+.svelte-kit/
+output/
+out/
+
+# Development
+.env.local
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage
+coverage/
+.nyc_output/
+.html
+
+# Testing
+*.test.js
+*.spec.js
+jest.config.js
+
+# Package manager
+package-lock.json
+yarn.lock
+
+# Browserslist
+.browserslist*
+
+# Vite
+.vite/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Source maps (optional, usually safe to commit but often not needed in repos)
+*.map
+
+```
